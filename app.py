@@ -22,7 +22,12 @@ if password:
     suggested_password = ''.join(random.choices(characters, k=12))
     st.write('Suggested strong password:', suggested_password)
 
+
     if len(password) >= 8:
         st.write('Password is strong')
     else:
         st.write('Password is weak')
+else: 
+    st.write('Please enter a password')
+
+st.write('made with ❤️ by Umm e Habiba Madni')
